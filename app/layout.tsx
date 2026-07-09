@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sharpsurgerycenter.com"),
+  metadataBase: new URL("https://www.sharpsurgerycenter.com"),
   title: {
     default: "Sharp Surgery Center | Self-Pay Ambulatory Surgery in Austin, TX",
     template: "%s | Sharp Surgery Center",
