@@ -36,6 +36,11 @@ export default function Footer() {
             <ul>
               <li><Link href="/contact">Contact &amp; Directions</Link></li>
               <li><Link href="/contact#consult">Request a Consult</Link></li>
+              <li>
+                <a href="https://drrobertwhitfieldmdreviews.com">
+                  See what patients say
+                </a>
+              </li>
             </ul>
           </div>
         </div>
