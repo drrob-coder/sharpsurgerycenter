@@ -10,12 +10,23 @@ export const metadata: Metadata = {
 export default function FacilityPage() {
   return (
     <>
-      <section className="page-header">
-        <div className="container">
+      <section className="facility-hero">
+        <video
+          className="facility-hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/videos/walk-in-1-poster.jpg"
+        >
+          <source src="/videos/walk-in-1.mp4" type="video/mp4" />
+        </video>
+        <div className="facility-hero-overlay" />
+        <div className="container facility-hero-content">
           <div className="breadcrumb">
             <Link href="/">Home</Link> / The Facility
           </div>
-          <span className="eyebrow">The Facility</span>
+          <span className="eyebrow on-dark">The Facility</span>
           <h1>A calm, modern space designed for outpatient surgery.</h1>
           <p>
             Purpose-built operating rooms and a patient-first environment
@@ -67,6 +78,24 @@ export default function FacilityPage() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Video divider — lot approach 3 */}
+      <section className="video-divider">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/videos/lot-approach-3-poster.jpg"
+        >
+          <source src="/videos/lot-approach-3.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section className="section">
+        <div className="container">
           <div className="feature-row">
             <div>
               <span className="feature-num">03</span>
