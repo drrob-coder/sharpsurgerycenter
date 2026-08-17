@@ -82,7 +82,7 @@ export default function FacilityPage() {
       </section>
 
       {/* Video divider — lot approach 3 */}
-      <section className="video-divider">
+      <section className="video-divider" style={{ backgroundImage: "url('/videos/lot-approach-3-poster.jpg')" }}>
         <video
           autoPlay
           muted

@@ -103,7 +103,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="video-divider">
+      <section className="video-divider" style={{ backgroundImage: "url('/videos/lot-pan-3-poster.jpg')" }}>
         <video
           className="video-divider-bg"
           autoPlay
