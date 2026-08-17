@@ -27,10 +27,16 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-media">
-            <img
-              src="/images/sharp-marquee.jpg"
-              alt="SHARP Surgery Center marquee letters at the building exterior on South Lamar, Austin TX"
-            />
+            <div className="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/gWPf3t6PcHU"
+                title="SHARP Surgery Center — Austin, TX"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
         <div className="spec-strip">
