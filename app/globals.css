@@ -286,7 +286,7 @@ textarea:focus-visible {
     background-position: center;
   }
   .hero-video-bg {
-    display: none;
+    /* Keep video visible on mobile — muted autoplay is allowed on iOS/Android */
   }
   .hero-content {
     padding-top: 3rem;
@@ -787,11 +787,7 @@ textarea:focus-visible {
   }
   .video-divider video,
   .video-divider-bg {
-    display: none;
-  }
-  .video-divider {
-    background-size: cover;
-    background-position: center;
+    /* Keep video visible on mobile — muted autoplay is allowed */
   }
 }
 /* ============================================
@@ -854,7 +850,7 @@ textarea:focus-visible {
     background-position: center;
   }
   .facility-hero-video {
-    display: none;
+    /* Keep video visible on mobile — muted autoplay is allowed */
   }
   .facility-hero-content {
     padding: 3rem 1.5rem;
