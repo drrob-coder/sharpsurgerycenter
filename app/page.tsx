@@ -3,40 +3,37 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <>
-      <section className="hero">
-        <div className="container hero-grid">
-          <div className="hero-copy">
-            <span className="eyebrow">South Lamar · Austin, Texas</span>
-            <h1>
-              Where patients and surgeons <em>are treated like family.</em>
-            </h1>
-            <p className="hero-sub">
-              SHARP Surgery Center is a purpose-built ambulatory surgery center
-              on South Lamar — designed to elevate the experience for everyone
-              in the room. Patients receive exceptional, unhurried care.
-              Surgeons operate in a facility built to support them at every
-              level.
-            </p>
-            <div className="hero-actions">
-              <a href="tel:+15125418132" className="btn btn-primary">
-                (512) 541-8132
-              </a>
-              <Link href="/facility" className="btn btn-outline">
-                Tour the Facility
-              </Link>
-            </div>
-          </div>
-          <div className="hero-media">
-            <div className="video-wrapper">
-              <iframe
-                src="https://www.youtube.com/embed/gWPf3t6PcHU"
-                title="SHARP Surgery Center — Austin, TX"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-              />
-            </div>
+      <section className="hero hero-video">
+        <video
+          className="hero-video-bg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/videos/lot-pan-1-poster.jpg"
+        >
+          <source src="/videos/lot-pan-1.mp4" type="video/mp4" />
+        </video>
+        <div className="hero-overlay" />
+        <div className="container hero-content">
+          <span className="eyebrow on-dark">South Lamar · Austin, Texas</span>
+          <h1>
+            Where patients and surgeons <em>are treated like family.</em>
+          </h1>
+          <p className="hero-sub">
+            SHARP Surgery Center is a purpose-built ambulatory surgery center
+            on South Lamar — designed to elevate the experience for everyone
+            in the room. Patients receive exceptional, unhurried care.
+            Surgeons operate in a facility built to support them at every
+            level.
+          </p>
+          <div className="hero-actions">
+            <a href="tel:+15125418132" className="btn btn-primary">
+              (512) 541-8132
+            </a>
+            <Link href="/facility" className="btn btn-outline on-dark">
+              Tour the Facility
+            </Link>
           </div>
         </div>
         <div className="spec-strip">
@@ -102,6 +99,42 @@ export default function HomePage() {
                 <li>Follow-up care</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="video-divider">
+        <video
+          className="video-divider-bg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/videos/lot-pan-3-poster.jpg"
+        >
+          <source src="/videos/lot-pan-3.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section className="section section-tour">
+        <div className="container">
+          <div className="section-header">
+            <span className="eyebrow">Virtual Tour</span>
+            <h2>Tour SHARP Surgery Center</h2>
+            <p>
+              See the facility that was purpose-built for surgeons and patients
+              in Austin, Texas.
+            </p>
+          </div>
+          <div className="tour-video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/gWPf3t6PcHU"
+              title="SHARP Surgery Center — Austin, TX"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+            />
           </div>
         </div>
       </section>

@@ -208,40 +208,68 @@ textarea:focus-visible {
   }
 }
 /* ============================================
-   Hero
+   Hero — Cinematic Video Background
    ============================================ */
 .hero {
   position: relative;
-  background: var(--bone);
-  color: var(--ink);
+  background: var(--ink);
+  color: var(--bone);
   overflow: hidden;
   padding: 5.5rem 0 0;
 }
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 3rem;
-  align-items: center;
+.hero-video {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
 }
-@media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; }
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
-.hero-copy { padding: 2rem 0 4rem; }
-.hero-copy .eyebrow { margin-bottom: 1.4rem; display: block; }
-.hero-copy h1 {
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 24, 0.45);
+  z-index: 2;
+}
+.hero-content {
+  position: relative;
+  z-index: 3;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-width: var(--container);
+}
+.hero-content .eyebrow {
+  margin-bottom: 1.4rem;
+  display: block;
+}
+.hero-content h1 {
   font-size: var(--step-5);
-  max-width: 13ch;
+  max-width: 16ch;
   font-weight: 500;
+  color: var(--bone);
 }
-.hero-copy h1 em {
+.hero-content h1 em {
   font-style: normal;
-  color: var(--teal-deep);
+  color: var(--brass-dim);
 }
 .hero-sub {
   margin-top: 1.6rem;
-  max-width: 38ch;
+  max-width: 42ch;
   font-size: var(--step-1);
-  color: var(--ink-soft);
+  color: rgba(247, 244, 238, 0.82);
   font-weight: 400;
 }
 .hero-actions {
@@ -250,14 +278,26 @@ textarea:focus-visible {
   margin-top: 2.4rem;
   flex-wrap: wrap;
 }
-/* Architectural line-plan graphic */
-.hero-plan {
-  position: relative;
-  padding: 2rem 0 4rem;
+@media (max-width: 768px) {
+  .hero-video {
+    min-height: 70vh;
+  }
+  .hero-video-bg {
+    display: none;
+  }
+  .hero {
+    background-image: url('/videos/lot-pan-1-poster.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-content h1 {
+    max-width: 100%;
+  }
 }
-.hero-plan svg { width: 100%; height: auto; }
 /* Spec strip */
 .spec-strip {
+  position: relative;
+  z-index: 3;
   border-top: 1px solid var(--line);
   background: #FFFFFF;
 }
@@ -708,47 +748,65 @@ textarea:focus-visible {
 .cta-band h2,
 .info-card h3,
 .procedure-block-head h2,
-.hero-copy h1 {
+.hero-content h1 {
   font-family: var(--font-body);
   font-weight: 600;
   letter-spacing: -0.01em;
 }
 
 /* ============================================
-   Hero media (homepage right column)
+   Video Divider Section
    ============================================ */
-.hero-media {
+.video-divider {
   position: relative;
-  border-radius: var(--radius);
+  width: 100%;
+  height: 360px;
   overflow: hidden;
 }
-.hero-media img {
+.video-divider-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: var(--radius);
 }
-.hero-media .video-wrapper {
+@media (max-width: 768px) {
+  .video-divider {
+    height: 240px;
+  }
+  .video-divider-bg {
+    display: none;
+  }
+  .video-divider {
+    background-image: url('/videos/lot-pan-3-poster.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+/* ============================================
+   Tour Video Section (YouTube embed)
+   ============================================ */
+.section-tour {
+  background: var(--bone-dim);
+}
+.tour-video-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 50.625%; /* 16:9 of 900px */
   border-radius: var(--radius);
   overflow: hidden;
+  border: 1px solid var(--line);
 }
-.hero-media .video-wrapper iframe {
+.tour-video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border: 0;
-  border-radius: var(--radius);
-}
-@media (max-width: 900px) {
-  .hero-media {
-    max-height: none;
-    margin-bottom: 1rem;
-  }
 }
 
 /* ============================================
