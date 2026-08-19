@@ -10,23 +10,12 @@ export const metadata: Metadata = {
 export default function FacilityPage() {
   return (
     <>
-      <section className="facility-hero">
-        <video
-          className="facility-hero-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/videos/walk-in-1-poster.jpg"
-        >
-          <source src="/videos/walk-in-1.mp4" type="video/mp4" />
-        </video>
-        <div className="facility-hero-overlay" />
-        <div className="container facility-hero-content">
+      <section className="page-header">
+        <div className="container">
           <div className="breadcrumb">
             <Link href="/">Home</Link> / The Facility
           </div>
-          <span className="eyebrow on-dark">The Facility</span>
+          <span className="eyebrow">The Facility</span>
           <h1>A calm, modern space designed for outpatient surgery.</h1>
           <p>
             Purpose-built operating rooms and a patient-first environment
@@ -51,8 +40,8 @@ export default function FacilityPage() {
             </div>
             <div className="feature-media">
               <img
-                src="/images/sharp-marquee.jpg"
-                alt="SHARP Surgery Center building exterior with marquee letters on South Lamar"
+                src="/images/facility/fx3-11-or4.jpg"
+                alt="Fully equipped operating room at SHARP Surgery Center with surgical table, overhead lights, and anesthesia equipment"
               />
             </div>
           </div>
@@ -73,29 +62,11 @@ export default function FacilityPage() {
             </div>
             <div className="feature-media">
               <img
-                src="/images/ribbon-cutting.jpg"
-                alt="Ribbon cutting ceremony at the SHARP Surgery Center grand opening"
+                src="/images/facility/fx3-02-lobby.jpg"
+                alt="Modern waiting area with mid-century leather chairs, teal tile display wall, and sputnik chandelier"
               />
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Video divider — lot approach 3 */}
-      <section className="video-divider" style={{ backgroundImage: "url('/videos/lot-approach-3-poster.jpg')" }}>
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/videos/lot-approach-3-poster.jpg"
-        >
-          <source src="/videos/lot-approach-3.mp4" type="video/mp4" />
-        </video>
-      </section>
-
-      <section className="section">
-        <div className="container">
           <div className="feature-row">
             <div>
               <span className="feature-num">03</span>
@@ -145,33 +116,224 @@ export default function FacilityPage() {
       <section className="section facility-gallery">
         <div className="container">
           <div className="section-header">
-            <span className="eyebrow">Gallery</span>
+            <span className="eyebrow">Virtual Walkthrough</span>
             <h2>Inside SHARP Surgery Center</h2>
+            <p>
+              Walk through our purpose-built facility — from the welcoming lobby
+              through the surgical suites.
+            </p>
           </div>
-          <div className="gallery-grid">
-            <div className="gallery-item">
-              <img
-                src="/images/grand-opening-backdrop.jpg"
-                alt="Dr. Whitfield with SHARP book at the grand opening backdrop"
-              />
+
+          <div className="walkthrough-section">
+            <h3 className="walkthrough-heading">
+              <span className="walkthrough-num">01</span>
+              Lobby &amp; Reception
+            </h3>
+            <div className="gallery-grid">
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-01-lobby.jpg"
+                  alt="SHARP Surgery Center reception area with front desk and modern seating"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-02-lobby.jpg"
+                  alt="Waiting area with mid-century leather chairs, teal tile display wall, and sputnik chandelier"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-03-lobby.jpg"
+                  alt="Lobby seating area with natural light from floor-to-ceiling windows"
+                />
+              </div>
             </div>
-            <div className="gallery-item">
-              <img
-                src="/images/lolli-interview.jpg"
-                alt="Dr. Whitfield and Anthony Lolli in a documentary interview at the SHARP Labs event"
-              />
+          </div>
+
+          <div className="walkthrough-section">
+            <h3 className="walkthrough-heading">
+              <span className="walkthrough-num">02</span>
+              Pre-Op
+            </h3>
+            <div className="gallery-grid">
+              <div className="gallery-item gallery-item-wide">
+                <img
+                  src="/images/facility/fx3-04-preop.jpg"
+                  alt="Pre-operative preparation area with patient beds and privacy curtains"
+                />
+              </div>
             </div>
-            <div className="gallery-item">
-              <img
-                src="/images/dr-whitfield-books.jpg"
-                alt="Dr. Robert Whitfield, founder of SHARP Surgery Center"
-              />
+          </div>
+
+          <div className="walkthrough-section">
+            <h3 className="walkthrough-heading">
+              <span className="walkthrough-num">03</span>
+              Nurse Station
+            </h3>
+            <div className="gallery-grid">
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-05-nurse-station.jpg"
+                  alt="Central nurse station with monitoring equipment and workstations"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-06-nurse-station.jpg"
+                  alt="Nurse station from a second angle showing clinical workspace"
+                />
+              </div>
             </div>
-            <div className="gallery-item">
-              <img
-                src="/images/event-photo-8.jpg"
-                alt="SHARP Surgery Center website homepage showcasing the facility"
-              />
+          </div>
+
+          <div className="walkthrough-section">
+            <h3 className="walkthrough-heading">
+              <span className="walkthrough-num">04</span>
+              Operating Rooms
+            </h3>
+            <div className="gallery-grid">
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-18-or1.jpg"
+                  alt="Operating Room 1 — fully equipped surgical suite"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-17-or2.jpg"
+                  alt="Operating Room 2 — surgical supply and preparation area"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-12-or3.jpg"
+                  alt="Operating Room 3 — surgical table with overhead lights and monitoring equipment"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-13-or3.jpg"
+                  alt="Operating Room 3 — wide view showing anesthesia machine and surgical lights"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-10-or4.jpg"
+                  alt="Operating Room 4 — surgical suite with ceiling-mounted equipment"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-11-or4.jpg"
+                  alt="Operating Room 4 — full view with surgical table, lights, and anesthesia station"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="walkthrough-section">
+            <h3 className="walkthrough-heading">
+              <span className="walkthrough-num">05</span>
+              OR Hallway
+            </h3>
+            <div className="gallery-grid">
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-14-or-hall.jpg"
+                  alt="OR hallway corridor with multiple operating room entrances and scrub sinks"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-15-or-hall.jpg"
+                  alt="OR hallway from a second angle showing clean clinical environment"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-16-or-hall.jpg"
+                  alt="OR hallway view toward the surgical wing entrance"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="walkthrough-section">
+            <h3 className="walkthrough-heading">
+              <span className="walkthrough-num">06</span>
+              Post-Op &amp; Recovery
+            </h3>
+            <div className="gallery-grid">
+              <div className="gallery-item gallery-item-wide">
+                <img
+                  src="/images/facility/fx3-07-postop.jpg"
+                  alt="Post-operative recovery area with patient beds and monitoring stations"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="walkthrough-section">
+            <h3 className="walkthrough-heading">
+              <span className="walkthrough-num">07</span>
+              Anesthesia
+            </h3>
+            <div className="gallery-grid">
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-08-anaesthesia.jpg"
+                  alt="Anesthesia preparation area with equipment and supply stations"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-09-anaesthesia.jpg"
+                  alt="Anesthesia room from a second angle showing workspace layout"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="walkthrough-section">
+            <h3 className="walkthrough-heading">
+              <span className="walkthrough-num">08</span>
+              Sterilization
+            </h3>
+            <div className="gallery-grid">
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-19-sterilization.jpg"
+                  alt="Sterilization room with instrument processing equipment"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-20-sterilization.jpg"
+                  alt="Sterilization room showing autoclaves and sterile storage"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="walkthrough-section">
+            <h3 className="walkthrough-heading">
+              <span className="walkthrough-num">09</span>
+              Staff Facilities
+            </h3>
+            <div className="gallery-grid">
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-21-locker-m.jpg"
+                  alt="Men's staff locker room with personal storage"
+                />
+              </div>
+              <div className="gallery-item">
+                <img
+                  src="/images/facility/fx3-22-locker-w.jpg"
+                  alt="Women's staff locker room with personal storage"
+                />
+              </div>
             </div>
           </div>
         </div>
