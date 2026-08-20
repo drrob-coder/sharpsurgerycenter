@@ -771,17 +771,24 @@ textarea:focus-visible {
   height: 100%;
   object-fit: cover;
 }
+.video-divider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 24, 0.25);
+  z-index: 1;
+}
+.video-divider-interior {
+  height: 320px;
+}
 @media (max-width: 768px) {
   .video-divider {
-    height: 240px;
+    height: 220px;
   }
-  .video-divider-bg {
-    display: none;
-  }
-  .video-divider {
-    background-image: url('/videos/lot-pan-3-poster.jpg');
-    background-size: cover;
-    background-position: center;
+  .video-divider-interior {
+    height: 200px;
   }
 }
 /* ============================================
@@ -807,6 +814,57 @@ textarea:focus-visible {
   width: 100%;
   height: 100%;
   border: 0;
+}
+/* ============================================
+   Facility Video Tour (side-by-side panels)
+   ============================================ */
+.section-video-tour {
+  background: var(--ink);
+  color: var(--bone);
+}
+.section-video-tour .section-header p {
+  color: rgba(247, 244, 238, 0.7);
+}
+.section-video-tour .eyebrow {
+  color: var(--brass-dim);
+}
+.video-tour-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .video-tour-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.video-tour-panel {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background: rgba(26, 26, 24, 0.5);
+}
+.video-tour-panel video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.video-tour-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.2rem 1.4rem;
+  background: linear-gradient(to top, rgba(26, 26, 24, 0.7) 0%, transparent 100%);
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bone);
+  z-index: 2;
 }
 
 /* ============================================

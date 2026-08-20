@@ -116,6 +116,20 @@ export default function HomePage() {
         </video>
       </section>
 
+      <section className="video-divider video-divider-interior" style={{ backgroundImage: "url('/videos/sharp-clip-2-poster.jpg')" }}>
+        <video
+          className="video-divider-bg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/videos/sharp-clip-2-poster.jpg"
+        >
+          <source src="/videos/sharp-clip-2.mp4" type="video/mp4" />
+        </video>
+        <div className="video-divider-overlay" />
+      </section>
+
       <section className="section section-tour">
         <div className="container">
           <div className="section-header">

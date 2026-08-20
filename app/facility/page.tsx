@@ -338,6 +338,45 @@ export default function FacilityPage() {
           </div>
         </div>
       </section>
+
+      <section className="section section-video-tour">
+        <div className="container">
+          <div className="section-header">
+            <span className="eyebrow">Video Walkthrough</span>
+            <h2>Experience the facility in motion</h2>
+            <p>
+              Step inside SHARP Surgery Center — from the welcoming lobby
+              through the fully equipped operating suites.
+            </p>
+          </div>
+          <div className="video-tour-grid">
+            <div className="video-tour-panel">
+              <div className="video-tour-label">Lobby &amp; Reception</div>
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster="/videos/sharp-clip-1-poster.jpg"
+              >
+                <source src="/videos/sharp-clip-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div className="video-tour-panel">
+              <div className="video-tour-label">Operating Suite</div>
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster="/videos/sharp-clip-2-poster.jpg"
+              >
+                <source src="/videos/sharp-clip-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
