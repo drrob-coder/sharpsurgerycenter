@@ -276,47 +276,7 @@ export default function FacilityPage() {
             </div>
           </div>
 
-          <div className="walkthrough-section">
-            <h3 className="walkthrough-heading">
-              <span className="walkthrough-num">07</span>
-              Sterilization
-            </h3>
-            <div className="gallery-grid">
-              <div className="gallery-item">
-                <img
-                  src="/images/facility/fx3-19-sterilization.jpg"
-                  alt="Sterilization room with instrument processing equipment"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src="/images/facility/fx3-20-sterilization.jpg"
-                  alt="Sterilization room showing autoclaves and sterile storage"
-                />
-              </div>
-            </div>
-          </div>
 
-          <div className="walkthrough-section">
-            <h3 className="walkthrough-heading">
-              <span className="walkthrough-num">08</span>
-              Staff Facilities
-            </h3>
-            <div className="gallery-grid">
-              <div className="gallery-item">
-                <img
-                  src="/images/facility/fx3-21-locker-m.jpg"
-                  alt="Men's staff locker room with personal storage"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src="/images/facility/fx3-22-locker-w.jpg"
-                  alt="Women's staff locker room with personal storage"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
