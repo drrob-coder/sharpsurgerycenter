@@ -145,12 +145,6 @@ export default function FacilityPage() {
                 />
               </div>
               <div className="gallery-item">
-                <img
-                  src="/images/facility/fx3-03-lobby.jpg"
-                  alt="Lobby seating area with natural light from floor-to-ceiling windows"
-                />
-              </div>
-              <div className="gallery-item">
                 <video
                   autoPlay
                   muted
