@@ -150,6 +150,16 @@ export default function FacilityPage() {
                   alt="Lobby seating area with natural light from floor-to-ceiling windows"
                 />
               </div>
+              <div className="gallery-item">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/videos/lobby-clip.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
           </div>
 
