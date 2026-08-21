@@ -78,12 +78,14 @@ export default function FacilityPage() {
                 operating room — is here because they believe in doing things
                 differently.
               </p>
-              <p>
-                <a href="https://drrobertwhitfieldmdreviews.com">
-                  See what patients say
-                </a>{" "}
-                about their care with Robert Whitfield, MD.
-              </p>
+              <div className="review-badge">
+                <a href="https://www.drrobertwhitfieldmdreviews.com/" target="_blank" rel="noopener noreferrer">
+                  <span className="review-stars">★★★★★</span>
+                  <span className="review-rating">5.0</span>
+                  <span className="review-source">Google Reviews</span>
+                </a>
+                <p className="review-cta">See what patients say about their care with Robert Whitfield, MD.</p>
+              </div>
             </div>
             <div className="feature-media">
               <img
