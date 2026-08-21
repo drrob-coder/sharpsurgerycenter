@@ -145,15 +145,21 @@ export default function FacilityPage() {
                 />
               </div>
               <div className="gallery-item">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                >
-                  <source src="/videos/lobby-clip.mp4" type="video/mp4" />
-                </video>
+                <img
+                  src="/images/facility/fx3-03-lobby.jpg"
+                  alt="Lobby seating area with natural light from floor-to-ceiling windows"
+                />
               </div>
+            </div>
+            <div className="gallery-video-wide">
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source src="/videos/lobby-clip.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
 
