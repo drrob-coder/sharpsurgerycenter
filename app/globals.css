@@ -996,10 +996,19 @@ textarea:focus-visible {
     aspect-ratio: 3/2;
   }
 }
-.gallery-item img {
+.gallery-item img, .gallery-item video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 600px) {
+  .gallery-video-wide {
+    aspect-ratio: 16/9;
+    margin-top: 1rem;
+  }
+  .walkthrough-video-wrapper {
+    aspect-ratio: 16/9;
+  }
 }
 
 /* ============================================
