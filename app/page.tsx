@@ -142,13 +142,13 @@ export default function HomePage() {
           </div>
           <div className="tour-video-wrapper">
             <iframe
-              src="https://www.youtube.com/embed/gWPf3t6PcHU"
+              src="https://www.youtube-nocookie.com/embed/gWPf3t6PcHU"
               title="SHARP Surgery Center — Austin, TX"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               loading="lazy"
-            />
+            ></iframe>
           </div>
         </div>
       </section>
