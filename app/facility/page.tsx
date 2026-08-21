@@ -277,27 +277,6 @@ export default function FacilityPage() {
           <div className="walkthrough-section">
             <h3 className="walkthrough-heading">
               <span className="walkthrough-num">07</span>
-              Anesthesia
-            </h3>
-            <div className="gallery-grid">
-              <div className="gallery-item">
-                <img
-                  src="/images/facility/fx3-08-anaesthesia.jpg"
-                  alt="Anesthesia preparation area with equipment and supply stations"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src="/images/facility/fx3-09-anaesthesia.jpg"
-                  alt="Anesthesia room from a second angle showing workspace layout"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="walkthrough-section">
-            <h3 className="walkthrough-heading">
-              <span className="walkthrough-num">08</span>
               Sterilization
             </h3>
             <div className="gallery-grid">
@@ -318,7 +297,7 @@ export default function FacilityPage() {
 
           <div className="walkthrough-section">
             <h3 className="walkthrough-heading">
-              <span className="walkthrough-num">09</span>
+              <span className="walkthrough-num">08</span>
               Staff Facilities
             </h3>
             <div className="gallery-grid">
